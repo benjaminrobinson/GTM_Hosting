@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GTM Hosting – Reports by Year</title>
+  <title>GTM Hosting – Data Explorer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      background: #f5f5f5;
       margin: 0;
       padding: 40px;
       color: #333;
@@ -14,51 +14,115 @@
     h1 {
       text-align: center;
       margin-bottom: 40px;
-      font-size: 32px;
+      font-size: 34px;
       color: #222;
     }
-    .year-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .year-card {
+    .section {
       background: white;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
+      padding: 25px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 900px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
-    .year-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    .section h2 {
+      margin-top: 0;
+      font-size: 26px;
+      color: #0057b7;
     }
-    a {
+    .year-list, .file-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 15px;
+    }
+    .year-link, .file-link {
+      background: #e9f2ff;
+      padding: 10px 16px;
+      border-radius: 6px;
       text-decoration: none;
-      color: #0070c9;
+      color: #0057b7;
+      font-weight: bold;
+      transition: background 0.15s ease;
+    }
+    .year-link:hover, .file-link:hover {
+      background: #d4e7ff;
     }
   </style>
 </head>
 <body>
 
-  <h1>GTM Hosting – Reports by Year</h1>
+<h1>GTM Hosting – Data Explorer</h1>
 
-  <div class="year-grid">
-    <a href="Stock/2018/" class="year-card">2018</a>
-    <a href="Stock/2019/" class="year-card">2019</a>
-    <a href="Stock/2020/" class="year-card">2020</a>
-    <a href="Stock/2021/" class="year-card">2021</a>
-    <a href="Stock/2022/" class="year-card">2022</a>
-    <a href="Stock/2023/" class="year-card">2023</a>
-    <a href="Stock/2024/" class="year-card">2024</a>
-    <a href="Stock/2025/" class="year-card">2025</a>
-    <a href="Stock/2026/" class="year-card">2026</a>
+<!-- STOCK -->
+<div class="section">
+  <h2>Stock</h2>
+  <div class="year-list">
+    <a class="year-link" href="Stock/2018/">2018</a>
+    <a class="year-link" href="Stock/2019/">2019</a>
+    <a class="year-link" href="Stock/2020/">2020</a>
+    <a class="year-link" href="Stock/2021/">2021</a>
+    <a class="year-link" href="Stock/2022/">2022</a>
+    <a class="year-link" href="Stock/2023/">2023</a>
+    <a class="year-link" href="Stock/2024/">2024</a>
+    <a class="year-link" href="Stock/2025/">2025</a>
+    <a class="year-link" href="Stock/2026/">2026</a>
   </div>
+</div>
+
+<!-- POSITION_TOP -->
+<div class="section">
+  <h2>Position_Top</h2>
+  <div class="file-list">
+    <a class="file-link" href="Position_Top/">View Files</a>
+  </div>
+</div>
+
+<!-- PROBABILITY -->
+<div class="section">
+  <h2>Probability</h2>
+  <div class="year-list">
+    <a class="year-link" href="Probability/2018/">2018</a>
+    <a class="year-link" href="Probability/2019/">2019</a>
+    <a class="year-link" href="Probability/2020/">2020</a>
+    <a class="year-link" href="Probability/2021/">2021</a>
+    <a class="year-link" href="Probability/2022/">2022</a>
+    <a class="year-link" href="Probability/2023/">2023</a>
+    <a class="year-link" href="Probability/2024/">2024</a>
+    <a class="year-link" href="Probability/2025/">2025</a>
+    <a class="year-link" href="Probability/2026/">2026</a>
+  </div>
+</div>
+
+<!-- PLAYER_TABLE -->
+<div class="section">
+  <h2>Player_Table</h2>
+  <div class="year-list">
+    <a class="year-link" href="Player_Table/2020/">2020</a>
+    <a class="year-link" href="Player_Table/2021/">2021</a>
+    <a class="year-link" href="Player_Table/2022/">2022</a>
+    <a class="year-link" href="Player_Table/2023/">2023</a>
+    <a class="year-link" href="Player_Table/2024/">2024</a>
+    <a class="year-link" href="Player_Table/2025/">2025</a>
+    <a class="year-link" href="Player_Table/2026/">2026</a>
+  </div>
+</div>
+
+<!-- TEAM_TABLE -->
+<div class="section">
+  <h2>Team_Table</h2>
+  <div class="file-list">
+    <a class="file-link" href="Team_Table/">View Files</a>
+  </div>
+</div>
+
+<!-- CLASS_DCOE -->
+<div class="section">
+  <h2>Class_DCOE</h2>
+  <div class="file-list">
+    <a class="file-link" href="Class_DCOE/">View Files</a>
+  </div>
+</div>
 
 </body>
 </html>
